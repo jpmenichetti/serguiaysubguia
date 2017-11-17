@@ -4,8 +4,8 @@
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="juanpablo.menichetti@gmail.com" href="http://phonegap.com">
+        Toolkas
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
@@ -114,4 +114,6 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+	<gap:config-file platform="android" parent="/manifest" mode="delete">
+	</gap:config-file>
 </widget>

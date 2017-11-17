@@ -87,6 +87,20 @@ body.seccion1{
     width:100%;
 }
 
+body.seccion2{
+	background:url(../img/bottom_4.png) no-repeat center bottom;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#f8f2dd;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -161,6 +175,14 @@ div.intro1{
 	font-weight: bold;
 	font-size: 200%;
 }
+div.intro2{
+	text-transform:uppercase;
+	color: #238b9e;
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+}
+
 p.content {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -193,6 +215,9 @@ span.importante{
 
 span.importante1{
 	color: #821517;
+}
+span.importante2{
+	color: #1dabb0;
 }
 
 .event {

@@ -26,6 +26,7 @@
 <body class="seccion0">
     <script type="text/javascript" src="js/hammer.min.js"></script>
     <script type="text/javascript" src="js/gestures.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
 	<img class="title_img" src="img/img_0.png"/>
 	<div class="intro">
 	¡Acepto el desafío!
@@ -41,7 +42,7 @@
 	“Me gustaría que ustedes guías y subguías de Patrulla vayan y orienten a sus Patrullas enteramente por su cuenta, porque es posible para ustedes hacerse cargo de cada joven en su Patrulla y ayudar a que llegue a ser una buena persona. No tiene sentido tener una o dos personas brillantes entre los integrantes de la Patrulla y que las demás no valgan mucho. Ustedes debieran tratar de que todos los integrantes sean bastante buenos.
 	</p>
 	<p class="importante">
-	El paso más importante para esto es el ejemplo propio que pueden dar ustedes, dado que lo que ustedes hacen será imitado por quienes integran la Patrulla.
+		El paso más importante para esto es el ejemplo propio que pueden dar ustedes, dado que lo que ustedes hacen será imitado por quienes integran la Patrulla.
 	</p>
 	<p class="content">
 		Muéstrenles que pueden cumplir instrucciones y respetar las reglas del juego ya sea que sean verbales o impresas o escritas, y que ustedes se comportan igual ya sea que la guiadora o el dirigente esté presente o no. Muéstrenles que ustedes pueden desarrollar especialidades y quienes integran la Patrulla seguirán el ejemplo con muy poca persuasión. Pero recuerden que deben liderar y no empujar.”
@@ -79,12 +80,22 @@
 	deje dudas, y tengamos en cuenta que <br/>siempre podemos contactarnos a:
 	</p>
 	<p class="importante">
-		<a href="mailto:guias@guiasyscoutschile.cl?subject=Quiero%20saber%20mas" target="_blank">guias@guiasyscoutschile.cl</a>
+		<a id="link_guias" href="mailto:guias@guiasyscoutschile.cl?subject=Quiero%20saber%20mas" target="_blank">guias@guiasyscoutschile.cl</a>
 	</p>
 	<p class="importante">
-		<a href="mailto:scouts@guiasyscoutschile.cl?subject=Quiero%20saber%20mas" target="_blank">scouts@guiasyscoutschile.cl</a>
+		<a id="link_scouts" href="mailto:scouts@guiasyscoutschile.cl?subject=Quiero%20saber%20mas" target="_blank">scouts@guiasyscoutschile.cl</a>
 	</p>
-	<p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</p>
+	<script>
+		var element = document.getElementById('link_guias');
+		var hammertime = Hammer(element).on("tap", function(event) {
+			window.open("mailto:guias@guiasyscoutschile.cl?subject=Quiero%20saber%20mas","_system");
+		});
+		var element2 = document.getElementById('link_scouts');
+		var hammertime2 = Hammer(element2).on("tap", function(event) {
+			window.open("mailto:scouts@guiasyscoutschile.cl?subject=Quiero%20saber%20mas","_system");
+		});
+	</script>
+	<p><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>&nbsp;</p>
 	</div>
 	<script>
 		configureGestures("full_content","index.html","seccion_1.html");

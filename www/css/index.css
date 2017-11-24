@@ -101,6 +101,60 @@ body.seccion2{
     width:100%;
 }
 
+body.seccion3{
+	background:url(../img/bottom_5.png) no-repeat center bottom;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#f8f2dd;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+body.seccion4{
+	background:url(../img/bottom_6.png) no-repeat center bottom;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#f8f2dd;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+body.seccion5{
+	background:url(../img/bottom_7s.png) no-repeat center bottom;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#f8f2dd;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+body.seccion6{
+	background:url(../img/bottom_8.png) no-repeat center bottom;
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#f8f2dd;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -123,6 +177,11 @@ a {
 	text-decoration: none;
 	color: #aebd3b;
 }
+a.seccion4 {
+	text-decoration: none;
+	color: #1dabaf;
+}
+
 img.title_img{
 	max-width: 100%;
     height: auto;
@@ -173,42 +232,79 @@ div.intro1{
 	color: #821517;
 	text-align: center;
 	font-weight: bold;
-	font-size: 200%;
+	font-size: 150%;
 }
 div.intro2{
 	text-transform:uppercase;
 	color: #238b9e;
 	text-align: center;
 	font-weight: bold;
-	font-size: 200%;
+	font-size: 150%;
+}
+div.intro3{
+	text-transform:uppercase;
+	color: #aebd3b;
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
+}
+div.intro4{
+	text-transform:uppercase;
+	color: #1dabaf;
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
 }
 
 p.content {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+p.content_centered {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+	text-align: center;
 }
 ul.content{
-    margin-left: 50px;
+    margin-left: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding-left: 1em; 
+  text-indent: -1em;
+}
+
+li.seccion5::before {
+	content: "• ";
+	color: #bcbd3b;
+	font-size: 150%;
 }
 
 p.importante {
 	color: #aebd3b;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 p.firma{
 	text-align: right;
 	font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
-	
+
 span.importante{
 	color: #aebd3b;
 }
@@ -218,6 +314,27 @@ span.importante1{
 }
 span.importante2{
 	color: #1dabb0;
+}
+
+span.importante3{
+	color: #aebd3b;
+}
+
+span.importante3_centrado{
+	color: #aebd3b;
+	text-align: center;
+}
+
+span.importante4{
+	color: #1dabaf;
+}
+
+span.importante5{
+	color: #bcbd3b;
+}
+
+span.importante6{
+	color: #1fabaf;
 }
 
 .event {

@@ -31,7 +31,7 @@ function configureGestures(contentId, previousPage, nextPage){
 			myElement.style.fontSize=value+"%";
 		});
 		myElement.style.touchAction="pan-y";
-
+		
 
 		mc.on("swiperight", function(ev) {
 			window.location.replace(previousPage);

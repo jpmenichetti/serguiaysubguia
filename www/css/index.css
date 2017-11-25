@@ -71,6 +71,9 @@ body.seccion0{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
 
 body.seccion1{
@@ -85,6 +88,9 @@ body.seccion1{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
 
 body.seccion2{
@@ -99,6 +105,9 @@ body.seccion2{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
 
 body.seccion3{
@@ -113,6 +122,9 @@ body.seccion3{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
 
 body.seccion4{
@@ -127,7 +139,11 @@ body.seccion4{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
+
 body.seccion5{
 	background:url(../img/bottom_7s.png) no-repeat center bottom;
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
@@ -140,6 +156,9 @@ body.seccion5{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
 
 body.seccion6{
@@ -154,7 +173,11 @@ body.seccion6{
     margin:0px;
     padding:0px;
     width:100%;
+	opacity:0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s; /* Safari */
 }
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -281,6 +304,12 @@ ul {
 li {
   padding-left: 1em; 
   text-indent: -1em;
+}
+
+li.seccion4::before {
+	content: "• ";
+	color: #1dabaf;
+	font-size: 150%;
 }
 
 li.seccion5::before {
